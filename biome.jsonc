@@ -1,0 +1,26 @@
+// https://github.com/biomejs/biome/issues/2455
+// - No tailwind class sorting yet
+// - No html, css linting/formatting
+// https://github.com/biomejs/biome/issues/1701
+// - No structured diagnostics output format
+{
+  "$schema": "https://biomejs.dev/schemas/1.7.0/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "master"
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "enabled": false
+  }
+}

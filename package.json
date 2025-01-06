@@ -1,0 +1,22 @@
+{
+  "name": "todomvc-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.6.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "tsc --build --verbose",
+    "check": "biome check --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

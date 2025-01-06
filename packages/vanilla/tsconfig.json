@@ -1,0 +1,7 @@
+{
+  "extends": ["../../tsconfig.shared.all.jsonc"],
+  "compilerOptions": {
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "noEmit": true
+  }
+}
